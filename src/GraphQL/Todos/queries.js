@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const GET_TODOS = gql`
     query getTodos {
-        todos {
+        todos(order_by: {id: asc}) {
             id
             isDone
             title
