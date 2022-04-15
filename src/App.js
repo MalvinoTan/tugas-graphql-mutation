@@ -119,7 +119,7 @@ const App = () => {
   const onEditItem = (id) => {
     const newTitle = prompt("Masukkan Title Baru : ");
 
-    updateTitleTodo({ variables: { id: id, title: newTitle } })
+    updateTitleTodo({ variables: { id: id, title: newTitle } });
   };
 
   const onDeleteItem = (id) => {
