@@ -69,7 +69,7 @@ const App = () => {
       loadingTodo: loadingId,
       errorTodo: errorId,
     });
-  }, [dataId]);
+  }, [dataId, loadingId, errorId]);
 
   useEffect(() => {
     setList({
@@ -77,7 +77,7 @@ const App = () => {
       loadingTodo: loading,
       errorTodo: error,
     });
-  }, [data]);
+  }, [data, loading, error]);
 
   const onSubmitList = (e) => {
     e.preventDefault();
